@@ -1,4 +1,6 @@
 .section-footer {
   padding-block: 100px;
   background: black;
+  color: #ccc;
+  font-size: 14px;
 }

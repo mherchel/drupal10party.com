@@ -11,6 +11,10 @@
 
   --black-1: #343A3E;
   --black-2: #242525;
+
+  --width-large: 1200px;
+  --width-medium: 900px;
+  --width-small: 630px;
 }
 
 *, *:before, *:after {
@@ -25,18 +29,59 @@ body {
 }
 
 h1 {
-  font-size: 90px;
-  line-height: 1.2;
-}
-
-h2 {
   font-size: 60px;
   line-height: 1.2;
 }
 
-h3 {
-  font-size: 36px;
+@media (min-width: 700px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 90px;
+  }
+}
+
+h2 {
+  font-size: 40px;
   line-height: 1.2;
+}
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@media (min-width: 1000px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+p {
+  margin-block: 20px;
+  line-height: 1.4;
 }
 
 :is(h1, h2, h3, p):where(:first-child) {

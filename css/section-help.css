@@ -1,10 +1,23 @@
 .section-help__inner {
-  --offset: 80px;
+  --offset: 0px;
 
   background: black;
-  padding: var(--offset);
   margin-block: 80px;
-  margin-inline: calc(-1 * var(--offset));
+  margin-left: calc(-1 * var(--offset));
+  padding: 40px;
   width: calc(100% + 2 * var(--offset));
   border: solid 3px var(--blue-4);
+}
+
+@media (min-width: 1200px) {
+  .section-help__inner {
+    --offset: 40px;
+    padding: var(--offset);
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-help__inner {
+    --offset: 80px;
+  }
 }

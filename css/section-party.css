@@ -3,10 +3,5 @@
 }
 
 .section-party .prose {
-  max-width: 900px;
-}
-
-.section-party .image-wrapper {
-  float: right;
-  max-width: 400px;
+  max-width: var(--width-medium);
 }

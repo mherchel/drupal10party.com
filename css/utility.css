@@ -1,8 +1,16 @@
 .image-wrapper {
   position: relative;
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+  .image-wrapper {
+    float: right;
+    width: min(50vw, 500px);
+    margin-left: 40px;
+  }
 }
 
 .image-wrapper img {
