@@ -20,9 +20,14 @@
 </head>
 <body>
 <header class="section-hero">
-  <img class="section-hero__img" src="img/drupal-getting-easier.jpg" alt="@todo">
-  <img class="section-hero__grid" src="img/grid.png" alt="">
-  <img class="section-hero__logo" src="img/logo.svg" alt="Drupal logo">
+
+  <picture>
+    <source srcset="/img/drupal-getting-easier-small.webp" media="(max-width: 600px)" fetchpriority="high" />
+    <source srcset="/img/drupal-getting-easier-medium.webp" media="(max-width: 1000px)" fetchpriority="high" />
+    <img class="section-hero__img" src="/img/drupal-getting-easier-large.webp" fetchpriority="high" alt="Dries standing on stage at DrupalCon during Driesnote with slide staing Drupal is getting easier">
+  </picture>
+  <img class="section-hero__grid" src="/img/grid.png" fetchpriority="high" alt="">
+  <img class="section-hero__logo" src="/img/logo.svg" fetchpriority="high" alt="Drupal logo">
   <div class="section-hero__container container">
     <h1 class="section-hero__title">Countdown to<br>Drupal 10</h1>
     <p class="section-hero__date">14 December, 2022</p>
@@ -51,7 +56,7 @@
   <div class="container">
     <h2 id="heading-about">About Drupal 10</h2>
     <div class="image-wrapper">
-      <img src="img/dries.jpg" width=436" height="291" loading="lazy" alt="Dries on stage at DrupalCon Prague">
+      <img src="/img/dries-on-stage.webp" width="799" height="533" loading="lazy" alt="Dries on stage at DrupalCon Prague">
     </div>
     <div class="prose section-about__content">
 
@@ -111,7 +116,7 @@
   <div class="container">
     <h2 class="section-party-title">The party</h2>
     <div class="image-wrapper">
-      <img src="img/dries.jpg" width=436" height="291" loading="lazy" alt="Dries on stage at DrupalCon Prague">
+      <img src="/img/drupalcon-camera.webp" width="799" height="533" loading="lazy" alt="Dries on stage at DrupalCon Prague">
     </div>
     <div class="prose">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illo cumque aspernatur tempore nisi obcaecati quae illum rerum aliquid beatae. Ad voluptates exercitationem fugit quae ea quo sit illo veritatis, iste, odio assumenda cupiditate placeat tenetur a odit sequi esse?</p>

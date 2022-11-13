@@ -8,4 +8,5 @@
 
 .section-party .image-wrapper {
   float: right;
+  max-width: 400px;
 }

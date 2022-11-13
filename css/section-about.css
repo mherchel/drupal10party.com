@@ -10,4 +10,5 @@
 
 .section-about .image-wrapper {
   float: right;
+  max-width: 500px;
 }
