@@ -7,8 +7,14 @@
 }
 
 .countdown__item {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+}
+
+@media (min-width: 400px) {
+  .countdown__item {
+    padding: 20px;
+  }
 }
 
 .countdown__number {

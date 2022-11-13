@@ -1,8 +1,28 @@
 .section-hero {
+  --margin-bottom: -150px;
+
   position: relative;
-  min-height: 1000px;
   color: white;
-  padding-top: 200px;
+  margin-bottom: var(--margin-bottom);
+  padding-block: 200px 400px;
+}
+
+@media (min-width: 600px) {
+  .section-hero {
+    --margin-bottom: -150px;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-hero {
+    --margin-bottom: -100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-hero {
+    --margin-bottom: 0px;
+  }
 }
 
 .section-hero:after {

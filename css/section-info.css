@@ -1,6 +1,12 @@
 .section-info {
   position: relative;
-  padding-block: 180px 100px;
+  padding-block: 100px 100px;
+}
+
+@media (min-width: 700px) {
+  .section-info {
+    padding-block: 180px 100px;
+  }
 }
 
 .section-info:before {

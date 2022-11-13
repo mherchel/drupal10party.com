@@ -1,17 +1,13 @@
 :root {
   --font-sans: "metropolis", sans-serif;
   --font-serif: "Lora", "georgia", serif;
-
   --blue-1:#1475AE;
   --blue-2: #1B9AE4;
   --blue-3: #00A2FF;
   --blue-4: #6CB9E7;
-
   --off-white: #F5F5F5;
-
   --black-1: #343A3E;
   --black-2: #242525;
-
   --width-large: 1200px;
   --width-medium: 900px;
   --width-small: 630px;
@@ -29,8 +25,14 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.2;
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: 700px) {
