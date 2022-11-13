@@ -6,5 +6,5 @@
   margin-block: 80px;
   margin-inline: calc(-1 * var(--offset));
   width: calc(100% + 2 * var(--offset));
-  border: solid 3px #6CB9E7;
+  border: solid 3px var(--blue-4);
 }

@@ -11,13 +11,23 @@
   display: flex;
   flex-direction: column;
   padding: 40px 20px 20px;
-  background: linear-gradient(157.81deg, #1B9AE4 0%, #1476AD 78.66%);
+  background: linear-gradient(160deg, var(--blue-2) 0%, var(--blue-1) 80%);
   text-decoration: none;
   color: white;
 }
 
+.card:focus {
+  outline: solid 2px white;
+  outline-offset: 3px;
+}
+
 .card svg {
   margin-top: 40px;
+  transition: translate 0.2s;
+}
+
+.card:is(:hover, :focus) svg {
+  translate: 5px 0;
 }
 
 .card__title {

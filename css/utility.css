@@ -58,3 +58,41 @@
   background: #0B0D0F;
   content: "";
 }
+
+.prose {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--off-white);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 20px;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  background: var(--blue-1);
+}
+
+.button:focus {
+  outline: solid 2px white;
+  outline-offset: 3px;
+}
+
+.button:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url('/img/arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: translate 0.2s;
+}
+
+.button:hover:after {
+  translate: 5px 0;
+}

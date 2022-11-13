@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(5.64deg, #242525 -31.23%, #000000 74.68%);
+  background: linear-gradient(6deg, var(--black-2) -30%, black 75%);
   transform: skewy(-6deg);
 }
 
