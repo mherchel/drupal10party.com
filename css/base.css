@@ -12,6 +12,7 @@ body {
   background-color: #0d0f10;
   font-family: var(--font-sans);
   color: white;
+  margin-bottom: 600px; /* @todo */
 }
 
 
@@ -41,6 +42,25 @@ img {
   height: auto;
 }
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 20px;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  background: #1475AE;
+}
+.button:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url('/img/arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /*
 
 section gradient
