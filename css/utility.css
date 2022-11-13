@@ -40,10 +40,6 @@
   height: 20px;
   background: linear-gradient(269.19deg, #6CB9E7 12.89%, #00A2FF 96.49%);
 }
-/* .edge--standard {
-  height: 400px;
-
-} */
 
 .edge--thick-gray {
   position: absolute;
@@ -78,8 +74,10 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-block: 20px;
+  margin-block: 40px 20px;
   padding: 15px 20px;
+  font-size: 18px;
+  line-height: 1.2;
   color: white;
   text-decoration: none;
   background: var(--blue-1);
