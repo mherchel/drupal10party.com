@@ -94,6 +94,15 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  margin-block: 20px;
+}
+
+li {
+  margin-block: 10px;
+  font-size: 18px;
+}
+
 a {
   color: var(--blue-2);
   text-decoration-thickness: 0.3em;
