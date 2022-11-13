@@ -1,0 +1,50 @@
+:root {
+  --font-sans: "metropolis", sans-serif;
+  --font-serif: "Lora", "georgia", serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0d0f10;
+  font-family: var(--font-sans);
+  color: white;
+}
+
+
+h1 {
+  font-size: 90px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+h2:where(:first-child) {
+  margin-top: 0;
+}
+
+.prose {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 36px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+
+section gradient
+
+#242525 100% #000000 100%
+
+*/

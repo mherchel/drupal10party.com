@@ -1,0 +1,13 @@
+.about {
+  position: relative;
+  z-index: 10;
+
+}
+
+.about__content {
+  max-width: 630px;
+}
+
+.about .image-wrapper {
+  float: right;
+}

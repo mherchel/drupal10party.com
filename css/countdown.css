@@ -1,0 +1,23 @@
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 450px;
+  padding-inline: 20px;
+  background: black;
+}
+
+.countdown__item {
+  padding: 20px;
+  text-align: center;
+}
+
+.countdown__number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.countdown__label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #B2C0CA;
+}
