@@ -1,0 +1,11 @@
+.party {
+  padding-top: 100px;
+}
+
+.party .prose {
+  max-width: 900px;
+}
+
+.party .image-wrapper {
+  float: right;
+}

@@ -1,5 +1,8 @@
 .image-wrapper {
   position: relative;
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .image-wrapper img {
@@ -23,9 +26,12 @@
   bottom: 0;
   width: 100%;
   transform: skewy(-6deg);
-  transform-origin: right bottom;
 }
 
+.edge--blue {
+  height: 20px;
+  background: linear-gradient(269.19deg, #6CB9E7 12.89%, #00A2FF 96.49%);
+}
 /* .edge--standard {
   height: 400px;
 
