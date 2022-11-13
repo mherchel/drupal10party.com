@@ -1,0 +1,11 @@
+.section-party {
+  padding-top: 100px;
+}
+
+.section-party .prose {
+  max-width: 900px;
+}
+
+.section-party .image-wrapper {
+  float: right;
+}

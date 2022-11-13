@@ -1,9 +1,9 @@
-.info {
+.section-info {
   position: relative;
   padding-block: 180px 100px;
 }
 
-.info:before {
+.section-info:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,11 +14,11 @@
   transform: skewy(-6deg);
 }
 
-.info .prose {
+.section-info .prose {
   max-width: 800px;
 }
 
-.info .container {
+.section-info .container {
   position: relative;
   z-index: 1;
 }

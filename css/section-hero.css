@@ -1,11 +1,11 @@
-.hero {
+.section-hero {
   position: relative;
   min-height: 1000px;
   color: white;
   padding-top: 200px;
 }
 
-.hero:after {
+.section-hero:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,24 +16,24 @@
   opacity: 0.5;
 }
 
-.hero__container {
+.section-hero__container {
   position: relative; /* Establish stacking context to appear above images. */
   z-index: 1;
 }
 
-.hero__title {
+.section-hero__title {
   margin-block: 0 20px;
 }
 
-.hero__logo {
+.section-hero__logo {
   position: absolute;
   top: 30px;
   left: 30px;
   z-index: 2;
 }
 
-.hero__img,
-.hero__grid {
+.section-hero__img,
+.section-hero__grid {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,11 +42,11 @@
   object-fit: cover
 }
 
-.hero__img {
+.section-hero__img {
   filter: saturate(2);
 }
 
-.hero__date {
+.section-hero__date {
   margin-block: 0 40px;
   font-size: 21px;
 }
