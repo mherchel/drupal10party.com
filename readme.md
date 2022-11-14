@@ -1,4 +1,4 @@
 # Website for Drupal10party.com
 
-- Dev domain: [https://scintillating-heliotrope-bb551a.netlify.app/](https://scintillating-heliotrope-bb551a.netlify.app/)
+- Domain: [https://www.drupal10party.com/](https://www.drupal10party.com/)
 - Vanilla HTML, CSS, and JS
