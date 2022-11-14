@@ -99,8 +99,9 @@ ul {
 }
 
 li {
-  margin-block: 10px;
+  margin-block: 20px;
   font-size: 18px;
+  line-height: 1.4;
 }
 
 a {
