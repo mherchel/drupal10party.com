@@ -8,6 +8,7 @@
   --off-white: #F5F5F5;
   --black-1: #343A3E;
   --black-2: #242525;
+  --black-3: #0d0f10;
   --width-large: 1200px;
   --width-medium: 900px;
   --width-small: 630px;
@@ -19,7 +20,7 @@
 
 body {
   margin: 0;
-  background-color: #0d0f10;
+  background-color: var(--black-3);
   font-family: var(--font-sans);
   color: white;
 }
