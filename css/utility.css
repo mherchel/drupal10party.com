@@ -41,6 +41,13 @@
   background: linear-gradient(269.19deg, #6CB9E7 12.89%, #00A2FF 96.49%);
 }
 
+@media (forced-colors: active) {
+  .edge--blue {
+    height: 0;
+    border-top: solid 20px currentColor;
+  }
+}
+
 .edge--thick-gray {
   position: absolute;
   left: 0;
@@ -76,6 +83,7 @@
   gap: 10px;
   margin-block: 40px 20px;
   padding: 15px 20px;
+  border: solid 1px transparent;
   font-size: 18px;
   line-height: 1.2;
   color: white;
@@ -97,6 +105,20 @@
   background-repeat: no-repeat;
   background-position: center;
   transition: translate 0.2s;
+}
+
+@media (forced-colors: active) {
+  .button:after {
+    background: linktext;
+    -webkit-mask-image: url('/img/arrow.svg');
+    mask-image: url('/img/arrow.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
 }
 
 .button:hover:after {
