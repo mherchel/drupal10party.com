@@ -50,7 +50,27 @@
 
 .edge--blue {
   height: 20px;
-  background: linear-gradient(269.19deg, #6CB9E7 0%, #00A2FF 100%);
+  background: linear-gradient(270deg, var(--blue-4) 0%, var(--blue-3) 50%, var(--blue-4) 100%);
+  background-position: 0%;
+  background-size: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .edge--blue {
+    animation-name: edge-blue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes edge-blue {
+  from {
+    background-position: 0%
+  }
+  to {
+    background-position: 100%;
+  }
 }
 
 @media (forced-colors: active) {
