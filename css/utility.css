@@ -16,9 +16,11 @@
 .image-wrapper img {
   position: relative;
   z-index: 1;
+  border: solid 1px #ffffff22;
 }
 
-.image-wrapper:before {
+.image-wrapper:before,
+.image-wrapper:after {
   position: absolute;
   left: -20px;
   top: 20px;
@@ -26,6 +28,16 @@
   width: 100%;
   border: solid 2px #6CB9E7;
   content: "";
+  transition: all 0.2s;
+}
+
+.image-wrapper:hover:before {
+  transform: rotate(2deg) skew(3deg, -3deg) scale(1.01);
+}
+
+.image-wrapper:hover:after {
+  transform: rotate(2deg) skew(-1deg, 1deg) scale(1.01);
+  border-color: hotpink;
 }
 
 .edge {
@@ -38,7 +50,7 @@
 
 .edge--blue {
   height: 20px;
-  background: linear-gradient(269.19deg, #6CB9E7 12.89%, #00A2FF 96.49%);
+  background: linear-gradient(269.19deg, #6CB9E7 0%, #00A2FF 100%);
 }
 
 @media (forced-colors: active) {

@@ -49,6 +49,11 @@ summary:after {
   border-top: solid 2px currentColor;
   border-right: solid 2px currentColor;
   rotate: -45deg;
+  transition: border-color 0.2s;
+}
+
+summary:hover:after {
+  border-color: var(--blue-3);
 }
 
 [open] summary:after {

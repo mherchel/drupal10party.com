@@ -27,6 +27,11 @@
   background: linear-gradient(160deg, var(--blue-2) 0%, var(--blue-1) 80%);
   text-decoration: none;
   color: white;
+  transition: background 0.2s;
+}
+
+.card:hover {
+  background: linear-gradient(160deg, var(--blue-3) 0%, var(--blue-1) 80%);
 }
 
 .card:focus {
