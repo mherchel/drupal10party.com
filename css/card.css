@@ -15,8 +15,42 @@
 }
 
 .card-item {
+  position: relative;
   display: flex;
   flex: 1;
+}
+
+.card-item:before,
+.card-item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: solid 2px transparent;
+  content: "";
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.card-item:hover:before {
+  transform: rotate(-1deg) skew(1deg, -1deg) scale(1.01);
+  border-color: #6CB9E7;
+}
+
+.card-item:hover:after {
+  transform: rotate(1deg) skew(-1deg, 1deg) scale(1.01);
+  border-color: hotpink;
+}
+
+.card-item:nth-child(even):hover:before {
+  transform: rotate(-1deg) skew(1deg, -1deg) scale(1.01);
+  border-color: hotpink;
+}
+
+.card-item:nth-child(even):hover:after {
+  transform: rotate(1deg) skew(-1deg, 1deg) scale(1.01);
+  border-color: #6CB9E7;
 }
 
 .card {
