@@ -1,3 +1,7 @@
+.section-help {
+  padding-top: 1px; /* Prevent margin from collapsing. */
+}
+
 .section-help__inner {
   --offset: 0px;
 

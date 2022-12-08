@@ -15,12 +15,12 @@
   background: linear-gradient(6deg, var(--black-2) -30%, black 75%);
   transform: skewy(-6deg);
 }
-
+/*
 @media (min-width: 700px) {
   .section-schedule {
     padding-bottom: 60px;
   }
-}
+} */
 
 .section-schedule__inner {
   position: relative; /* Stacking context to appear above :before pseudo-element. */
@@ -37,34 +37,46 @@
   list-style: none;
 }
 
+@media (min-width: 700px) {
+  .section-schedule__list {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+}
+
 .section-schedule__item {
-  display: flex;
-  gap: 10px;
-  margin: 0;
+  display: contents;
+}
+
+.section-schedule__item > * {
   padding: 10px;
 }
 
-.section-schedule__item:nth-child(even) {
+.section-schedule__item:nth-child(even) > * {
   background: var(--black-2);
 }
 
 .section-schedule__time {
-
+  padding-block: 20px;
 }
 
 .section-schedule__talk-list {
-
-}
-
-.section-schedule__talk-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: min(300px, 50%) 1fr;
   gap: 10px;
 }
 
-.section-schedule__talk-speaker {
-
+.section-schedule__talk-item {
+  display: contents;
 }
 
+.section-schedule__talk-speaker,
 .section-schedule__talk-topic {
+  padding-block: 10px;
+}
 
+.section-schedule__time-utc {
+  margin-top: 5px;
+  color: #8b8b8b;
+  font-size: 16px;
 }

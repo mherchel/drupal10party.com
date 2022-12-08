@@ -1,6 +1,6 @@
 (() => {
   function updateTimer() {
-    const future = Date.parse('2022-12-14T00:00:00Z');
+    const future = Date.parse('December 14, 2022 16:00:00 GMT');
     const now = new Date();
     const diff = future - now;
 

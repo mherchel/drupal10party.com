@@ -6,16 +6,25 @@
     if (hours === 0) { // yeah yeah
       hours = 12;
     }
+
+    const minutes = startTime.getMinutes() < 10 ? `0${startTime.getMinutes()}` : startTime.getMinutes();
     const amOrPm = startTime.getHours() < 12 ? 'am' : 'pm';
 
     el.innerHTML = `
-      Dec ${startTime.getDate()} ${hours}:00${amOrPm}
+      <div class="section-schedule__time-local">
+        ${startTime.getDate()} Dec ${hours}:${minutes}${amOrPm}
+      </div>
+      <div class="section-schedule__time-utc">
+        ${startTime.getUTCHours()}:00 UTC
+      </div>
     `;
   }
 
   const timeElements = document.querySelectorAll('[data-time]');
   const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-
+  document.querySelector('.section-schedule__time-zone').innerHTML = `
+    All times below are <em>should</em> be in your local time zone (${userTimeZone}).
+  `;
   timeElements.forEach(outputLocalTime);
 })();
