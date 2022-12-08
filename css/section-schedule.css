@@ -1,0 +1,56 @@
+.section-schedule {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.section-schedule:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content:  {
+
+  }
+  border-top: solid 1px transparent;
+  background: linear-gradient(6deg, var(--black-2) -30%, black 75%);
+  transform: skewy(-6deg);
+}
+
+@media (min-width: 700px) {
+  .section-schedule {
+    padding-bottom: 60px;
+  }
+}
+
+.section-schedule__inner {
+  position: relative;
+}
+
+.section-schedule__schedule {
+
+}
+
+.section-schedule__item {
+
+}
+
+.section-schedule__time {
+
+}
+
+.section-schedule__talk-list {
+
+}
+
+.section-schedule__talk-item {
+
+}
+
+.section-schedule__talk-speaker {
+
+}
+
+.section-schedule__talk-topic {
+
+}
