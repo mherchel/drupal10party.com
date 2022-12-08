@@ -1,6 +1,7 @@
 .section-schedule {
   position: relative;
-  padding-bottom: 50px;
+  margin-block: 100px;
+  padding-block: 150px 100px;
 }
 
 .section-schedule:before {
@@ -9,9 +10,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  content:  {
-
-  }
+  content: "";
   border-top: solid 1px transparent;
   background: linear-gradient(6deg, var(--black-2) -30%, black 75%);
   transform: skewy(-6deg);
@@ -24,15 +23,29 @@
 }
 
 .section-schedule__inner {
-  position: relative;
+  position: relative; /* Stacking context to appear above :before pseudo-element. */
 }
 
 .section-schedule__schedule {
 
 }
 
-.section-schedule__item {
+.section-schedule__list {
+  margin-block: 30px;
+  margin-inline: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.section-schedule__item {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+}
+
+.section-schedule__item:nth-child(even) {
+  background: var(--black-2);
 }
 
 .section-schedule__time {
@@ -44,7 +57,8 @@
 }
 
 .section-schedule__talk-item {
-
+  display: flex;
+  gap: 10px;
 }
 
 .section-schedule__talk-speaker {
