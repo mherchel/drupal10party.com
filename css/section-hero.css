@@ -71,3 +71,14 @@
   margin-block: 0 40px;
   font-size: 21px;
 }
+
+.section-hero__content {
+  position: relative;
+  z-index: 1; /* Appear above gradient */
+  margin-block: 20px;
+  font-size: 20px;
+}
+
+.section-hero__content a {
+  color: inherit;
+}
