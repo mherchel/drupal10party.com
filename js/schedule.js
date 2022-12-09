@@ -24,7 +24,7 @@
   const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   document.querySelector('.section-schedule__time-zone').innerHTML = `
-    All times below are <em>should</em> be in your local time zone (${userTimeZone}).
+    All times below <em>should</em> be in your local time zone (${userTimeZone}).
   `;
   timeElements.forEach(outputLocalTime);
 })();
