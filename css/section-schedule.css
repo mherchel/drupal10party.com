@@ -15,19 +15,14 @@
   background: linear-gradient(6deg, var(--black-2) -30%, black 75%);
   transform: skewy(-6deg);
 }
-/*
-@media (min-width: 700px) {
-  .section-schedule {
-    padding-bottom: 60px;
-  }
-} */
 
 .section-schedule__inner {
   position: relative; /* Stacking context to appear above :before pseudo-element. */
 }
 
-.section-schedule__schedule {
-
+.section-schedule__summary {
+  max-width: var(--width-medium);
+  margin-bottom: 30px;
 }
 
 .section-schedule__list {
@@ -53,11 +48,18 @@
 }
 
 .section-schedule__item:nth-child(even) > * {
+  border-top: solid 1px transparent;
   background: var(--black-2);
 }
 
 .section-schedule__time {
   padding-block: 20px;
+}
+
+@media (min-width: 700px) {
+  .section-schedule__time {
+    padding-left: 20px;
+  }
 }
 
 .section-schedule__talk-list {

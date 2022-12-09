@@ -1,4 +1,6 @@
 :root {
+  scroll-behavior: smooth;
+
   --font-sans: "metropolis", sans-serif;
   --font-serif: "Lora", "georgia", serif;
   --blue-1:#1475AE;
