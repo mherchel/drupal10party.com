@@ -128,7 +128,7 @@
   outline-offset: 3px;
 }
 
-.button:after {
+.button:where(:not(.button--zoom)):after {
   content: "";
   width: 12px;
   height: 12px;
@@ -155,4 +155,52 @@
 
 .button:hover:after {
   translate: 5px 0;
+}
+
+.button--zoom {
+  position: relative;
+  padding: 20px 70px 20px 40px;
+  background-image: url('/img/zoom.svg');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.button--zoom:hover {
+  background-color: #015180;
+}
+
+.button--zoom:before,
+.button--zoom:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: solid 2px transparent;
+  content: "";
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.button--zoom:hover:before {
+  transform: rotate(-1deg) skew(0.2deg, -0.2deg) scale(1.01);
+  border-color: #6CB9E7;
+}
+
+.button--zoom:hover:after {
+  transform: rotate(0.2deg) skew(-0.2deg, 0.2deg) scale(1.01);
+  border-color: hotpink;
+}
+
+.button--zoom:nth-child(even):hover:before {
+  transform: rotate(-0.2deg) skew(0.2deg, -0.2deg) scale(1.01);
+  border-color: hotpink;
+}
+
+.button--zoom:nth-child(even):hover:after {
+  transform: rotate(0.2deg) skew(-0.2deg, 0.2deg) scale(1.01);
+  border-color: #6CB9E7;
 }
