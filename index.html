@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="css/section-about.css">
   <link rel="stylesheet" href="css/section-info.css">
   <link rel="stylesheet" href="css/section-party.css">
-  <link rel="stylesheet" href="css/section-help.css">
   <link rel="stylesheet" href="css/section-footer.css">
   <link rel="stylesheet" href="css/section-schedule.css">
+  <link rel="stylesheet" href="css/site-nav.css">
   <link rel="preload" href="/fonts/metropolis/Metropolis-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/metropolis/Metropolis-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/lora/lora-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,7 +42,15 @@
     <img class="section-hero__img" src="/img/drupal-getting-easier-large.webp" width="3872" height="2592" fetchpriority="high" alt="Dries standing on stage at DrupalCon during Driesnote with slide staing Drupal is getting easier">
   </picture>
   <img class="section-hero__grid" src="/img/grid.png" width="2147" height="1014" fetchpriority="high" alt="">
-  <img class="section-hero__logo" src="/img/logo.svg" width="31" height="40" fetchpriority="high" alt="Drupal logo">
+  <a href="#"><img class="section-hero__logo" src="/img/logo.svg" width="31" height="40" fetchpriority="high" alt="Drupal logo"></a>
+  <nav class="site-nav">
+    <ul class="site-nav__menu">
+      <li class="site-nav__item"><a href="#about">About Drupal 10</a></li>
+      <li class="site-nav__item"><a href="#info">Try Drupal 10 Today</a></li>
+      <li class="site-nav__item"><a href="#party">FAQs</a></li>
+      <li class="site-nav__item"><a href="#schedule">Schedule</a></li>
+    </ul>
+  </nav>
   <div class="section-hero__container container">
     <h1 class="section-hero__title">Drupal 10 Launch Party</h1>
     <p class="section-hero__date">Drupal 10 is due to launch on 14 December, 2022. Join us and celebrate! A remote event by the community for the community.</p>
@@ -66,13 +74,13 @@
     </div>
   </div>
   <div class="section-hero__content container">
-    <p><a href="#schedule">See the schedule ↓</a></p>
+
   </div>
   <div class="edge edge--thick-gray"></div>
 </header>
-<section aria-labelledby="heading-about" class="section-about">
+<section aria-labelledby="about" class="section-about">
   <div class="container">
-    <h2 id="heading-about">About Drupal 10</h2>
+    <h2 id="about">About Drupal 10</h2>
     <div class="image-wrapper">
       <img src="/img/dries-on-stage.webp" width="799" height="533" loading="lazy" alt="Dries on stage at DrupalCon Prague">
     </div>
@@ -121,9 +129,9 @@
   </div>
 </section>
 
-<section aria-labelledby="heading-info" class="section-info">
+<section aria-labelledby="info" class="section-info">
   <div class="container">
-    <h2 id="heading-info" class="section-info__title">Try Drupal 10 RC today!</h2>
+    <h2 id="info" class="section-info__title">Try Drupal 10 RC today!</h2>
     <div class="prose section-info__text">
       <p>Upgrading from previous versions of Drupal is easier than ever. Follow the link below to try out the latest beta of Drupal 10, and let us know what you think!</p>
     </div>
@@ -132,9 +140,9 @@
   <div class="edge edge--blue"></div>
 </section>
 
-<section aria-labelledby="party-heading" class="section-party">
+<section aria-labelledby="party" class="section-party">
   <div class="container">
-    <h2 id="party-heading" class="section-party-title">The party</h2>
+    <h2 id="party" class="section-party-title">The party</h2>
     <div class="image-wrapper">
       <img src="/img/drupalcon-camera.webp" width="799" height="533" loading="lazy" alt="Dries on stage at DrupalCon Prague">
     </div>

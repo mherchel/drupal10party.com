@@ -4,11 +4,12 @@
   position: relative;
   color: white;
   margin-bottom: var(--margin-bottom);
-  padding-block: 200px 400px;
+  padding-block: 300px 400px;
 }
 
 @media (min-width: 600px) {
   .section-hero {
+    padding-block: 200px 400px;
     --margin-bottom: -150px;
   }
 }
