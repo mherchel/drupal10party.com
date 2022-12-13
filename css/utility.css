@@ -159,6 +159,7 @@
 
 .button--zoom {
   position: relative;
+  margin-top: 0;
   padding: 20px 70px 20px 40px;
   background-image: url('/img/zoom.svg');
   background-size: 30px;
